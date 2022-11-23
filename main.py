@@ -17,7 +17,7 @@ class Vk_User:
     def save_photo(self, owner_id):
         url_photo = 'https://api.vk.com/method/photos.get'
         params = {
-            'owner_id': '122708699',
+            'owner_id': '1...9',
             'album_id': 'profile',
             'rev': False,
             'extended': True,
@@ -46,7 +46,7 @@ class Vk_User:
 
 if __name__ == '__main__':
     vk = Vk_User(token_vk, '5.131')
-    vk.save_photo(122708699)
+    vk.save_photo(1....9)
 
 with open('token_ya.txt', 'r') as file_token_Ya:
     token_ya = file_token_Ya.read().strip()
